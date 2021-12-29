@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.accent-color {
+  color: #044b7f;
+}
+
+.accent-color-background {
+  background-color: #044b7f;
+}
+
+.button {
+  transition: 0.3s;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  background-color: #054a6e;
+}
+
+a {
+  text-decoration: none;
+  color: #a5b8a6;
+}
+
+a:hover {
+  color: #9797aa;
+  font-weight: bold;
+  transform: scale(1.05);
+}
+
+.card {
+  padding-top: 30px;
+  height: 150px;
+  background-color: #f7f7f7;
+  color: #044b7f;
+  text-align: center;
+  font-size: 25px;
+  border-radius: 10px;
+  box-shadow: 4px 8px 8px hsl(0deg 0% 0% / 0.38);
+  transition: 0.3s;
+}
+
+.card:hover{
+  background-color: #F1FAEE;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.faq-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  padding: 15px;
+}
+.faq-card{
+  padding: 20px;
+  font-size: 30px;
+  border-radius:20px;
+  background-image: linear-gradient(to right top, #a8e1e9, #8fe7de, #8aeac4, #9fea9f);
+}
+
+.faq-heading{
+  font: bold 30px "poppins";
+  padding: 10px 0;
+
+}
+
+.faq-body{
+  font: 18px "poppins";
+  padding: 8px 0;
+}
+
+@media only screen and (min-width: 500px){
+  .faq-container{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 800px){
+  .faq-container{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
