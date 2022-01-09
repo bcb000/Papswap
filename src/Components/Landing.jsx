@@ -34,14 +34,14 @@ export const Landing = () => {
   return (
     <>
 
-    {/** -----first layer-------*/}
-    <div className='row m-2 mx-md-5 my-md-4 py-5' style={{
+      {/** -----first layer-------*/}
+      <div className='row m-2 mx-md-5 my-md-4 py-5' style={{
         borderRadius: "40px",
         background: "linear-gradient(104deg, rgba(140,247,149,1) 0%, rgba(141,240,220,0.981127485173757) 25%, rgba(144,167,240,1) 50%, rgba(247,170,255,1) 75%, rgba(165,120,250,1) 100%)",
         backgroundSize: "400% 400%",
         animation: "gradient 40s ease infinite",
         margin: "auto",
-        height: "85vh"
+        minHeight: "85vh"
       }}>
         <div className='col col-10 col-md-6 my-auto px-3'>
           <div className='mx-4 mx-md-5'>
@@ -51,7 +51,7 @@ export const Landing = () => {
             <div className="fs-4 accent-color my-2 my-md-3">
               No clueless redemption codes or wallets
             </div>
-            <Button className='accent-color-background px-4 py-3 button'>Get App</Button>
+            <Button href="https://play.google.com/store/apps/details?id=in.papswap.android.app" target="_blank" className='accent-color-background px-4 py-3 button'><i class="fab fa-google-play"></i> Get App</Button>
           </div>
         </div>
 
@@ -140,7 +140,7 @@ export const Landing = () => {
             src={screenshotA}
             data-aos="fade-up"
             className="mx-3" style={{
-              height:"255px",
+              height: "255px",
               marginTop: "-50px",
               padding: "0"
             }} />
